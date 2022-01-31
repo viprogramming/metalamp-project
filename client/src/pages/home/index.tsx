@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 import Header from "../../ui/components/header";
+import NavBar from "../../ui/components/navbar";
+
+import Logo from "../../assets/Logo";
 
 import { getHeadersLinks } from "../../utils";
 
@@ -13,7 +16,10 @@ const headerLinks = getHeadersLinks();
 const Home = () => {
   return (
     <>
-      <Header links={headerLinks} />
+      <Header>
+        <Logo />
+        <NavBar links={headerLinks} />
+      </Header>
       <SHeading>Home page</SHeading>
     </>
   );
