@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/metalamp-project/static/js/main.28159715.js",
+    "static/js/260.07523394.chunk.js": "/metalamp-project/static/js/260.07523394.chunk.js",
+    "static/js/808.3511d57a.chunk.js": "/metalamp-project/static/js/808.3511d57a.chunk.js",
+    "static/js/555.1e6d44d4.chunk.js": "/metalamp-project/static/js/555.1e6d44d4.chunk.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/metalamp-project/static/js/787.c4e7f8f9.chunk.js",
+    "static/js/317.faa32961.chunk.js": "/metalamp-project/static/js/317.faa32961.chunk.js",
+    "index.html": "/metalamp-project/index.html",
+    "main.28159715.js.map": "/metalamp-project/static/js/main.28159715.js.map",
+    "260.07523394.chunk.js.map": "/metalamp-project/static/js/260.07523394.chunk.js.map",
+    "808.3511d57a.chunk.js.map": "/metalamp-project/static/js/808.3511d57a.chunk.js.map",
+    "555.1e6d44d4.chunk.js.map": "/metalamp-project/static/js/555.1e6d44d4.chunk.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/metalamp-project/static/js/787.c4e7f8f9.chunk.js.map",
+    "317.faa32961.chunk.js.map": "/metalamp-project/static/js/317.faa32961.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.28159715.js"
+  ]
+}

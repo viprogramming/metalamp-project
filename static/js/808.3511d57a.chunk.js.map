@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/808.3511d57a.chunk.js","mappings":"wHAIA,UAJ6B,WAC3B,OAAO","sources":["pages/404/index.tsx"],"sourcesContent":["const NotFoundPageFallback = () => {\n  return <h1>Not Found</h1>;\n};\n\nexport default NotFoundPageFallback;\n"],"names":[],"sourceRoot":""}
