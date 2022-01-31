@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/metalamp-project/static/js/main.a22dcee6.js",
-    "static/js/260.07523394.chunk.js": "/metalamp-project/static/js/260.07523394.chunk.js",
+    "main.js": "/metalamp-project/static/js/main.399be393.js",
+    "static/js/260.36ec17c7.chunk.js": "/metalamp-project/static/js/260.36ec17c7.chunk.js",
     "static/js/808.3511d57a.chunk.js": "/metalamp-project/static/js/808.3511d57a.chunk.js",
-    "static/js/555.1e6d44d4.chunk.js": "/metalamp-project/static/js/555.1e6d44d4.chunk.js",
+    "static/js/994.ced630e5.chunk.js": "/metalamp-project/static/js/994.ced630e5.chunk.js",
     "static/js/787.c4e7f8f9.chunk.js": "/metalamp-project/static/js/787.c4e7f8f9.chunk.js",
-    "static/js/317.faa32961.chunk.js": "/metalamp-project/static/js/317.faa32961.chunk.js",
+    "static/js/534.0fae405f.chunk.js": "/metalamp-project/static/js/534.0fae405f.chunk.js",
     "index.html": "/metalamp-project/index.html",
-    "main.a22dcee6.js.map": "/metalamp-project/static/js/main.a22dcee6.js.map",
-    "260.07523394.chunk.js.map": "/metalamp-project/static/js/260.07523394.chunk.js.map",
+    "main.399be393.js.map": "/metalamp-project/static/js/main.399be393.js.map",
+    "260.36ec17c7.chunk.js.map": "/metalamp-project/static/js/260.36ec17c7.chunk.js.map",
     "808.3511d57a.chunk.js.map": "/metalamp-project/static/js/808.3511d57a.chunk.js.map",
-    "555.1e6d44d4.chunk.js.map": "/metalamp-project/static/js/555.1e6d44d4.chunk.js.map",
+    "994.ced630e5.chunk.js.map": "/metalamp-project/static/js/994.ced630e5.chunk.js.map",
     "787.c4e7f8f9.chunk.js.map": "/metalamp-project/static/js/787.c4e7f8f9.chunk.js.map",
-    "317.faa32961.chunk.js.map": "/metalamp-project/static/js/317.faa32961.chunk.js.map"
+    "534.0fae405f.chunk.js.map": "/metalamp-project/static/js/534.0fae405f.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.a22dcee6.js"
+    "static/js/main.399be393.js"
   ]
 }
