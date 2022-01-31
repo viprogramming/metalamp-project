@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import { SContainer } from "../../../shared/container";
 
-import { books } from "../../../navigation/books";
+import { IBook } from "../../../navigation/books";
 
 import Logo from "../../../assets/Logo";
 
@@ -35,19 +35,18 @@ const SHeaderContainer = styled(SContainer)`
   justify-content: space-between;
   align-items: center;
 `;
+interface Props {
+  links: IBook[];
+}
 
-const headerLinks = Object.keys(books).filter(
-  (book) => books[book].isHeaderLink
-);
-
-const Header = () => {
+const Header = ({ links }: Props) => {
   return (
     <SHeader>
       <SHeaderContainer>
         <Logo />
         <SNav>
-          {headerLinks.map((book) => (
-            <SNavLink to={books[book].to}>{books[book].link}</SNavLink>
+          {links.map((book) => (
+            <SNavLink to={book.to}>{book.link}</SNavLink>
           ))}
         </SNav>
       </SHeaderContainer>

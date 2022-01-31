@@ -1,4 +1,10 @@
-interface IBooks {
+export interface IBook {
+  to: string;
+  link: string;
+  isHeaderLink: boolean;
+}
+
+export interface IBooks {
   [key: string]: {
     to: string;
     link: string;
