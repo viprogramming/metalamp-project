@@ -1,5 +1,11 @@
 import Navigation from "./navigation";
+import GlobalStyle from "./styles/globalStyles";
 
-const App = () => <Navigation />;
+const App = () => (
+  <>
+    <GlobalStyle />
+    <Navigation />
+  </>
+);
 
 export default App;
