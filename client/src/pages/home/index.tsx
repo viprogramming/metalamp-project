@@ -8,6 +8,7 @@ import { SHeaderContainer } from "../../styles/components";
 import Button from "../../ui/components/button";
 
 import styled from "styled-components";
+import { useAuth } from "../../hooks/useAuth";
 
 const headerLinks = getHeadersLinks();
 
@@ -17,18 +18,50 @@ const SButtons = styled.div`
   }
 `;
 
-const Home = () => (
-  <Header
-    HeaderStyledComponent={SHeaderContainer}
-    logo={<Logo />}
-    navbar={<NavBar links={headerLinks} />}
-    buttons={
-      <SButtons>
-        <Button type='link'>войти</Button>
-        <Button type='link'>зарегистрироваться</Button>
-      </SButtons>
-    }
-  />
-);
+const SHeaders = styled.div`
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+`;
+
+const Home = () => {
+  const { isLogin, setIsLogin, user, setUser } = useAuth();
+
+  const handleLogin = () => {
+    setIsLogin(true);
+    setUser({ name: "Tony Stark" });
+  };
+
+  return (
+    <SHeaders>
+      <Header
+        HeaderStyledComponent={SHeaderContainer}
+        logo={<Logo />}
+        navbar={<NavBar links={headerLinks} />}
+        buttons={
+          <SButtons>
+            <Button type='link'>войти</Button>
+            <Button type='link'>зарегистрироваться</Button>
+          </SButtons>
+        }
+      />
+      <Header
+        HeaderStyledComponent={SHeaderContainer}
+        logo={<Logo />}
+        navbar={<NavBar links={headerLinks} />}
+        buttons={
+          <SButtons>
+            <Button type='link' onClick={handleLogin}>
+              войти
+            </Button>
+            <Button type='link'>зарегистрироваться</Button>
+          </SButtons>
+        }
+        isLogin={isLogin}
+        user={user}
+      />
+    </SHeaders>
+  );
+};
 
 export default Home;

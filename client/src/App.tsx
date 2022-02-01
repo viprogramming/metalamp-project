@@ -1,10 +1,13 @@
+import { AuthProvider } from "./hooks/useAuth";
 import Navigation from "./navigation";
 import GlobalStyle from "./styles/globalStyles";
 
 const App = () => (
   <>
     <GlobalStyle />
-    <Navigation />
+    <AuthProvider>
+      <Navigation />
+    </AuthProvider>
   </>
 );
 

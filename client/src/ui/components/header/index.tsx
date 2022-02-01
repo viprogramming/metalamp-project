@@ -7,6 +7,29 @@ const SHeader = styled.header`
   height: 70px;
   min-height: 70px;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  background: #ffffff;
+`;
+
+const SUserName = styled.div`
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    height: 30px;
+    width: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(31, 32, 65, 0.1);
+  }
 `;
 
 interface Props {
@@ -15,6 +38,8 @@ interface Props {
   logo?: ReactNode;
   navbar?: ReactNode;
   buttons?: ReactNode;
+  isLogin?: boolean;
+  user?: { name: string };
 }
 
 const Header = ({
@@ -23,6 +48,8 @@ const Header = ({
   logo,
   navbar,
   buttons,
+  isLogin,
+  user,
 }: Props) => {
   return (
     <SHeader>
@@ -30,7 +57,7 @@ const Header = ({
         {logo}
         {navbar}
         {children}
-        {buttons}
+        {isLogin ? <SUserName>Hello, {user?.name}!!!</SUserName> : buttons}
       </HeaderStyledComponent>
     </SHeader>
   );
