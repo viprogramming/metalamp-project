@@ -52,7 +52,7 @@ const Header = ({
   user,
 }: Props) => {
   return (
-    <SHeader>
+    <SHeader data-testid='header'>
       <HeaderStyledComponent>
         {logo}
         {navbar}
