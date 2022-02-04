@@ -5,6 +5,7 @@ interface Props {
   children: ReactNode;
   type?: string;
   onClick?: (e: SyntheticEvent) => void;
+  id?: string;
 }
 
 const SButton = styled.button`

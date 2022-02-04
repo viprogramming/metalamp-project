@@ -1,9 +1,10 @@
-import styled, { StyledComponent } from "styled-components";
-
 import { ReactNode } from "react";
 
+import styled, { StyledComponent } from "styled-components";
+
+import { linkFont } from "../../../styles/templates";
+
 const SHeader = styled.header`
-  width: 100%;
   height: 70px;
   min-height: 70px;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -11,12 +12,7 @@ const SHeader = styled.header`
 `;
 
 const SUserName = styled.div`
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.5);
+  ${linkFont}
   margin-left: 40px;
   position: relative;
 
@@ -57,7 +53,11 @@ const Header = ({
         {logo}
         {navbar}
         {children}
-        {isLogin ? <SUserName>Hello, {user?.name}!!!</SUserName> : buttons}
+        {isLogin ? (
+          <SUserName data-testid='userName'>Hello, {user?.name}!!!</SUserName>
+        ) : (
+          buttons
+        )}
       </HeaderStyledComponent>
     </SHeader>
   );

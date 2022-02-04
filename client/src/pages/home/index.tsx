@@ -9,6 +9,7 @@ import Button from "../../ui/components/button";
 
 import styled from "styled-components";
 import { useAuth } from "../../hooks/useAuth";
+import { SyntheticEvent } from "react";
 
 const headerLinks = getHeadersLinks();
 
@@ -30,6 +31,8 @@ const Home = () => {
   const handleLogin = () => {
     setIsLogin(true);
     setUser({ name: "Tony Stark" });
+    const button = document.getElementById("button");
+    button?.click();
   };
 
   return (
@@ -40,7 +43,15 @@ const Home = () => {
         navbar={<NavBar links={headerLinks} />}
         buttons={
           <SButtons>
-            <Button type='link'>войти</Button>
+            <Button
+              type='link'
+              id='button'
+              onClick={(e) => {
+                console.log(e.isTrusted);
+              }}
+            >
+              войти
+            </Button>
             <Button type='link'>зарегистрироваться</Button>
           </SButtons>
         }
