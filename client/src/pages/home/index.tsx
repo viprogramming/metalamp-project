@@ -10,6 +10,7 @@ import Button from "../../ui/components/button";
 import styled from "styled-components";
 import { useAuth } from "../../hooks/useAuth";
 import { SyntheticEvent } from "react";
+import Footer from "../../ui/components/footer";
 
 const headerLinks = getHeadersLinks();
 
@@ -36,42 +37,45 @@ const Home = () => {
   };
 
   return (
-    <SHeaders>
-      <Header
-        HeaderStyledComponent={SHeaderContainer}
-        logo={<Logo />}
-        navbar={<NavBar links={headerLinks} />}
-        buttons={
-          <SButtons>
-            <Button
-              type='link'
-              id='button'
-              onClick={(e) => {
-                console.log(e.isTrusted);
-              }}
-            >
-              войти
-            </Button>
-            <Button type='link'>зарегистрироваться</Button>
-          </SButtons>
-        }
-      />
-      <Header
-        HeaderStyledComponent={SHeaderContainer}
-        logo={<Logo />}
-        navbar={<NavBar links={headerLinks} />}
-        buttons={
-          <SButtons>
-            <Button type='link' onClick={handleLogin}>
-              войти
-            </Button>
-            <Button type='link'>зарегистрироваться</Button>
-          </SButtons>
-        }
-        isLogin={isLogin}
-        user={user}
-      />
-    </SHeaders>
+    <>
+      <SHeaders>
+        <Header
+          HeaderStyledComponent={SHeaderContainer}
+          logo={<Logo />}
+          navbar={<NavBar links={headerLinks} />}
+          buttons={
+            <SButtons>
+              <Button
+                type='link'
+                id='button'
+                onClick={(e) => {
+                  console.log(e.isTrusted);
+                }}
+              >
+                войти
+              </Button>
+              <Button type='link'>зарегистрироваться</Button>
+            </SButtons>
+          }
+        />
+        <Header
+          HeaderStyledComponent={SHeaderContainer}
+          logo={<Logo />}
+          navbar={<NavBar links={headerLinks} />}
+          buttons={
+            <SButtons>
+              <Button type='link' onClick={handleLogin}>
+                войти
+              </Button>
+              <Button type='link'>зарегистрироваться</Button>
+            </SButtons>
+          }
+          isLogin={isLogin}
+          user={user}
+        />
+      </SHeaders>
+      <Footer />
+    </>
   );
 };
 
